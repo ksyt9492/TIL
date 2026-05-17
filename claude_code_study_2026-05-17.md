@@ -89,3 +89,39 @@ for f in .claude/rules/*.md; do echo "=== $f ==="; cat "$f"; echo; done
 
 - [claude-code-expert/example](https://github.com/claude-code-expert/example)
 - 설명: 클로드 코드 설정 및 마크다운 예제 모음
+
+
+cd ~/문서/TIL
+
+# 파일 삭제
+git rm 파일명.md
+
+# 커밋
+git commit -m "파일 삭제"
+
+# push
+git push origin main
+
+
+
+# 1. TIL 폴더로 이동
+cd ~/문서/TIL
+
+# 2. 파일 열어서 내용 추가
+nvim 파일명.md
+
+# 3. 저장 후 나오기 (nvim에서)
+# i 로 입력모드 → 내용 작성 → ESC → :wq
+
+# 4. 스테이징
+git add 파일명.md
+
+# 5. 커밋
+git commit -m "내용 추가"
+
+# 6. push
+git push origin main
+
+
+
+
