@@ -123,5 +123,12 @@ git commit -m "내용 추가"
 git push origin main
 
 
+# 1. 전역 설정 (한 번만)
+git config --global pull.rebase false
 
+# 2. 다시 pull
+git pull origin main
+
+# 3. push
+git push origin main
 
